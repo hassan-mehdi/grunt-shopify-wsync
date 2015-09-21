@@ -16,7 +16,7 @@ This is the basic gruntfile:
 
 module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-shopify');
+  grunt.loadNpmTasks('grunt-shopify-wsync');
 
   grunt.initConfig({
      shopify: {
