@@ -1,0 +1,46 @@
+{
+  "name": "grunt-shopify-wsync",
+  "version": "1.0.0",
+  "description": "This is a package is based on the package grunt-shopify by wilr. grunt-shopify-wsync is basically the same package but with the option to sync a live theme with a secondary theme (this is a complete overwrite process, ALL FILES WILL BE OVERWRITTEN between the theme and sync theme).",
+  "main": "Gruntfile.js",
+    "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "peerDependencies": {
+    "grunt-contrib-watch": ">=0.4.4",
+    "grunt": "~0.4.1",
+    "growl": "~1.7"
+  },
+  "devDependancies": {
+    "grunt-contrib-jshint": "~0.1.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "shopify"
+  ],
+  "devDependencies": {
+    "grunt-release": "~0.7.0"
+  },
+  "dependencies": {
+    "async": "^0.2.10",
+    "isbinaryfile": "^2.0.4",
+    "shopify-api": "^0.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hassan-mehdi/grunt-shopify-wsync"
+  },
+  "keywords": [
+    "shopify"
+  ],
+  "author": "Hassan <hassan.b.mehdi@gmail.com> (http://hassan.xyz/)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/hassan-mehdi/grunt-shopify-wsync/issues"
+  },
+  "homepage": "https://github.com/hassan-mehdi/grunt-shopify-wsync"
+}
