@@ -28,9 +28,9 @@ module.exports = function(grunt){
           //The directory you want your theme to download to on your local machine
           base: 'theme/',
           //Theme id for the non-live theme, this is where local changes are made and get pushed to shopify when you save (grunt-contrib-watch)
-          theme: '42533957',
+          theme: '######',
           //Theme id for the Live theme, Live is always the theme you sync from not to, you have been warned!
-          sync: '42063941'
+          sync: '######'
         }
     },
 
