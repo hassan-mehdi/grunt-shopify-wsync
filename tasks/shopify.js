@@ -1,9 +1,6 @@
 /*
  * grunt-shopify
- * https://github.com/wilr/grunt-shopify
- *
- * Copyright (c) 2013 Will Rossiter
- * Licensed under the BSD license.
+ * https://github.com/hassan-mehdi/grunt-shopify-wsync
  */
 'use strict';
 
