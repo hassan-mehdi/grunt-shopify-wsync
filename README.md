@@ -4,6 +4,10 @@ He most definitely put all the leg work in, I just added a sync option so I can 
 
 ## Getting Started
 
+This package is built to simulate a proper dev workflow, live environment and staging environment. Live theme and a staging theme. 
+
+The sync option means you can pull any updates made on the live theme into the staging theme.
+
 I CANNOT STRESS THIS ENOUGH, This is a package made for my own personal use and I will in no way provide support.
 
 If you do come across this you are more than very welcome to use it:
@@ -45,4 +49,16 @@ module.exports = function(grunt){
   grunt.registerTask('default', ['shopify']);
 };
 
+```
+
+To download the non-live theme (staging theme) from Shopify
+
+```shell
+grunt shopify:download
+```
+
+To download the live theme and overwrite the non-live theme on your local machine
+
+```shell
+grunt shopify:sync
 ```

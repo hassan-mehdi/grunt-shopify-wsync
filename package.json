@@ -1,7 +1,7 @@
 {
   "name": "grunt-shopify-wsync",
-  "version": "1.0.3",
-  "description": "This is a package is based on the package grunt-shopify by wilr. grunt-shopify-wsync is basically the same package but with the option to sync a live theme with a secondary theme (this is a complete overwrite process, ALL FILES WILL BE OVERWRITTEN between the theme and sync theme).",
+  "version": "1.0.5",
+  "description": "This is a package is based on the package grunt-shopify by wilr. grunt-shopify-wsync is basically the same package but with the option to overwrite theme data with another theme's data.",
   "main": "Gruntfile.js",
     "main": "Gruntfile.js",
   "engines": {
