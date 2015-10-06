@@ -1,9 +1,8 @@
 {
   "name": "grunt-shopify-wsync",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is a package is based on the package grunt-shopify by wilr. grunt-shopify-wsync is basically the same package but with the option to overwrite theme data with another theme's data.",
   "main": "Gruntfile.js",
-    "main": "Gruntfile.js",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -16,7 +15,6 @@
     "grunt-contrib-jshint": "~0.1.1"
   },
   "keywords": [
-    "gruntplugin",
     "shopify"
   ],
   "dependencies": {
@@ -31,13 +29,20 @@
     "type": "git",
     "url": "https://github.com/hassan-mehdi/grunt-shopify-wsync"
   },
-  "keywords": [
-    "shopify"
-  ],
-  "author": "Hassan <hassan.b.mehdi@gmail.com> (http://hassan.xyz/)",
+  "author": {
+    "name": "Hassan",
+    "email": "hassan.b.mehdi@gmail.com",
+    "url": "http://hassan.xyz/"
+  },
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/hassan-mehdi/grunt-shopify-wsync/issues"
   },
-  "homepage": "https://github.com/hassan-mehdi/grunt-shopify-wsync"
+  "homepage": "https://github.com/hassan-mehdi/grunt-shopify-wsync",
+  "readme": "This npm package is based on the work by Will Rossiter (wilr, https://github.com/wilr/grunt-shopify). \r\n\r\nHe most definitely put all the leg work in, I just added a sync option so I can pull changes from live themes into preview themes.\r\n\r\n## Getting Started\r\n\r\nThis package is built to simulate a proper dev workflow, live environment and staging environment. Live theme and a staging theme. \r\n\r\nThe sync option means you can pull any updates made on the live theme into the staging theme.\r\n\r\nI CANNOT STRESS THIS ENOUGH, This is a package made for my own personal use and I will in no way provide support.\r\n\r\nIf you do come across this you are more than very welcome to use it:\r\n\r\ngrunt-contrib-watch is required\r\n\r\nThis is the basic gruntfile:\r\n\r\n```js\r\n\r\nmodule.exports = function(grunt){\r\n  grunt.loadNpmTasks('grunt-contrib-watch');\r\n  grunt.loadNpmTasks('grunt-shopify-wsync');\r\n\r\n  grunt.initConfig({\r\n     shopify: {\r\n      options: {\r\n        //You can find these in your Shopify Admin under Apps then look at the bottom for Create a private API Key\r\n          api_key: \"###################\",\r\n          password: \"####################\",\r\n          url: \"########.myshopify.com\",\r\n          //The directory you want your theme to download to on your local machine\r\n          base: 'theme/',\r\n          //Theme id for the non-live theme, this is where local changes are made and get pushed to shopify when you save (grunt-contrib-watch)\r\n          theme: '######',\r\n          //Theme id for the Live theme, Live is always the theme you sync from not to, you have been warned!\r\n          sync: '######'\r\n        }\r\n    },\r\n\r\n    watch: {\r\n      shopify: {\r\n        files: ['theme/**'],\r\n        tasks: [\"shopify\"]\r\n      }\r\n    }\r\n  });\r\n\r\n  grunt.registerTask('default', ['shopify']);\r\n};\r\n\r\n```\r\n\r\nTo download the non-live theme (staging theme) from Shopify\r\n\r\n```shell\r\ngrunt shopify:download\r\n```\r\n\r\nTo download the live theme and overwrite the non-live theme on your local machine\r\n\r\n```shell\r\ngrunt shopify:sync\r\n```",
+  "readmeFilename": "README.md",
+  "gitHead": "89c747f545949f81be4ff1c0df247a4163bfe7ec",
+  "_id": "grunt-shopify-wsync@1.0.5",
+  "_shasum": "c1d3d10925eedac29e4cfa1a7364078e5a7472da",
+  "_from": "grunt-shopify-wsync@"
 }

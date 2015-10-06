@@ -128,6 +128,10 @@ module.exports = function(grunt) {
      * @param {string}
      * @return {string}
      */
+    shopify._makeAssetKeyDownload = function(filepath) {
+        return filepath;
+    };
+
     shopify._makeAssetKey = function(filepath) {
         filepath = shopify._makePathRelative(filepath);
 
@@ -341,8 +345,8 @@ module.exports = function(grunt) {
     shopify.download = function(filepath, done) {
         var api = shopify._getApi(),
             themeId = shopify._getThemeId(),
-            key = shopify._makeAssetKey(filepath);
-
+            key = shopify._makeAssetKeyDownload(filepath);
+            console.log(key);
         function onRetrieve(err, obj) {
             if (err) {
                 if (err.type === 'ShopifyInvalidRequestError') {
