@@ -345,7 +345,7 @@ module.exports = function(grunt) {
     shopify.download = function(filepath, done) {
         var api = shopify._getApi(),
             themeId = shopify._getThemeId(),
-            key = shopify._makeAssetKeyDownload(filepath);
+            key = shopify._makeAssetKey(filepath);
             console.log(key);
         function onRetrieve(err, obj) {
             if (err) {
